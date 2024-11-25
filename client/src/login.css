@@ -1,0 +1,100 @@
+/* Login.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 35rem;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased width of the card */
+    width: 100%;
+    text-align: center;
+    /* Removed hover effect */
+}
+
+.login-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #4b3f6b;
+    margin-bottom: 1.5rem;
+}
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.95rem;
+    color: #4b3f6b;
+    margin-bottom: 0.3rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 1.5rem; /* Increased padding */
+    height: 2rem; /* Significantly increased field width */
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.2);
+    outline: none;
+}
+
+.error {
+    color: #ff4d4f;
+    font-size: 0.9rem;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.login-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #5b7cd4, #945ec4);
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(1px);
+}
